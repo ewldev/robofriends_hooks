@@ -27,7 +27,7 @@ function App () {
       .then(users=> {setRobots(users)});
     //console.log(robots, searchfield)  
     console.log(count)
-  },[count])
+  },[count]) // only run if count chagnes
 
   const onSearchChange = (event) => {
     setSearchfield(event.target.value)
